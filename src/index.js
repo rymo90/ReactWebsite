@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Image from "./components/Image";
 import News from "./components/News";
 import Video from "./components/Video";
+import SideBar from "./components/sidebar";
 
 import "./styles.css";
 
@@ -12,10 +13,16 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Home />
+        <div>
+          <SideBar />
 
-        <News />
+          <Home />
+        </div>
+
         <Video />
+        <News />
+        <News />
+        <News />
       </div>
     );
   }
