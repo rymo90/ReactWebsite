@@ -3,6 +3,9 @@ import { render } from "react-dom";
 import ReactDOM from "react-dom";
 import Home from "./components/Home";
 import Image from "./components/Image";
+import News from "./components/News";
+import Video from "./components/Video";
+
 import "./styles.css";
 
 class App extends React.Component {
@@ -10,7 +13,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <Home />
-        <Image />
+
+        <News />
+        <Video />
       </div>
     );
   }
