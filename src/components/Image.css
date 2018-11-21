@@ -1,6 +1,5 @@
-@media (max-width: 900px) {
-  .carousel {
-    width: auto;
-    height: auto;
-  }
+.carousel {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
 }

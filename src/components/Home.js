@@ -1,5 +1,7 @@
 import React from "react";
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
+import "./Home.css";
+import { Link } from "react-router";
 
 class Home extends React.Component {
   constructor(props) {
@@ -11,7 +13,9 @@ class Home extends React.Component {
       <Navbar className="Navbar">
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#home">BrandName</a>
+            <a className="BrandName" href="#home">
+              BrandName
+            </a>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>

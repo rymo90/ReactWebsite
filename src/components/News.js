@@ -1,5 +1,6 @@
 import React from "react";
 import { Jumbotron, Button } from "react-bootstrap";
+import "./News.css";
 class News extends React.Component {
   constructor(props) {
     super(props);
@@ -7,7 +8,7 @@ class News extends React.Component {
   }
   render() {
     return (
-      <Jumbotron>
+      <Jumbotron className="jumbotron">
         <h1>Hello, world!</h1>
         <p>
           This is a simple hero unit, a simple jumbotron-style component for

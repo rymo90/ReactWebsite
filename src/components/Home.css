@@ -1,0 +1,14 @@
+.Navbar {
+  color: black;
+}
+.Navbar .navbar-nav {
+  color: blue;
+}
+
+.Navbar .navbar-nav > li > a {
+  color: black;
+  text-transform: uppercase;
+}
+.Navbar .navbar-nav > li > a:hover {
+  color: #808000;
+}
