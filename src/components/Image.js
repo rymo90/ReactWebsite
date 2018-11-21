@@ -1,37 +1,42 @@
 import React from "react";
-import Slider from "react-slick";
 import Art from "./art.jpg";
 import Basket from "./basket.jpg";
 import Urban from "./urban.jpg";
-import "./Image.css";
+import { Carousel } from "react-bootstrap";
 class Image extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      name: " This is Image"
-    };
+    this.state = { name: "Redwan" };
   }
   render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
     return (
-      <Slider className="Image" {...settings}>
-        <div>
-          <img src={Art} width="100%" height="500" />
-        </div>
-        <div>
-          <img src={Basket} width="100%" height="500" />
-        </div>
-        <div>
-          <img src={Urban} width="100%" height="500" />
-        </div>
-      </Slider>
+      <Carousel className="carousel">
+        <Carousel.Item>
+          <img width={900} height={500} alt="900x500" src={Art} />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width={900} height={500} alt="900x500" src={Basket} />
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width={900} height={500} alt="900x500" src={Urban} />
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     );
   }
 }
+
 export default Image;

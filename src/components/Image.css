@@ -1,3 +1,6 @@
-.Image {
-  text-align: center;
+@media (max-width: 900px) {
+  .carousel {
+    width: auto;
+    height: auto;
+  }
 }
